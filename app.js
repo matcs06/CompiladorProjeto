@@ -1,6 +1,8 @@
-let fs = require("fs");
+let fs = require("fs"); //Biblioteca para leitura de arquivo
 let lineArr = [""]; //Array para Guardar linhas
-let count = 0; //Contador de linhas
+
+//Sessão de import de módulos
+const breackLine = require("./breack.js"); //Importando o breack line
 
 //Lendo o arquivo
 try {
@@ -10,16 +12,10 @@ try {
   console.log(err);
 }
 
-//Quebrando as linhas
-for (i = 0; i < data.length; i++) {
-  if (data[i] != "\n") {
-    lineArr[count] += data[i];
-  } else {
-    //Assinalando valor para a primeira posição de cada linha para tirar o undef
-    count++;
-    lineArr[count] = "";
-  }
-}
+//Posicionando cada linha do código em uma posição do vetor
+let linhas = breackLine.quebraLinha(data, lineArr);
 
-console.log(lineArr);
-console.log(count);
+//Eliminado o \r no final de cada linha
+linhas = breackLine.eliminaChar(linhas);
+
+console.log(linhas);

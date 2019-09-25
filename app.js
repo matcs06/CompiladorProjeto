@@ -13,9 +13,9 @@ try {
 }
 
 //Posicionando cada linha do código em uma posição do vetor
-let linhas = breackLine.quebraLinha(data, lineArr);
+lineArr = breackLine.quebraLinha(data, lineArr);
 
 //Eliminado o \r no final de cada linha
-linhas = breackLine.eliminaChar(linhas);
+lineArr = breackLine.eliminaChar(lineArr);
 
-console.log(linhas);
+console.log(lineArr);

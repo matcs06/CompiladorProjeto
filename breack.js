@@ -14,24 +14,10 @@ exports.quebraLinha = function(arr1, arr2 = [""]) {
   return arr2;
 };
 
+//Função para eliminar o \r do final de cada linha
 exports.eliminaChar = arr => {
   for (i = 0; i < arr.length; i++) {
     arr[i] = arr[i].replace("\r", "");
   }
-
   return arr;
 };
-
-/*
-//Quebrando as linhas
-for (i = 0; i < data.length; i++) {
-  if (data[i] != "\n") {
-    lineArr[count] += data[i];
-  } else {
-    //Assinalando valor para a primeira posição de cada linha para tirar o undef
-    count++;
-
-    lineArr[count] = "";
-  }
-}
-*/

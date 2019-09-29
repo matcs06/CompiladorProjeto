@@ -1,5 +1,6 @@
+//codigo de teste
 #include <stdio.h>
-int main (){
+int main(){
   int idade = 10;
-  printf (idade);
+  printf(idade);
 }

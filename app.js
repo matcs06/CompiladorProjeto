@@ -3,6 +3,7 @@ let lineArr = [""]; //Array para Guardar linhas
 
 //Sessão de import de módulos
 const breackLine = require("./breack.js"); //Importando o breack line
+const removeComment = require("./removeComment.js");
 
 //Lendo o arquivo
 try {
@@ -17,5 +18,7 @@ lineArr = breackLine.quebraLinha(data, lineArr);
 
 //Eliminado o \r no final de cada linha
 lineArr = breackLine.eliminaChar(lineArr);
+
+lineArr = removeComment.initRemov(lineArr);
 
 console.log(lineArr);

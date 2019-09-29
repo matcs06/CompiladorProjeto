@@ -13,12 +13,16 @@ try {
   console.log(err);
 }
 
+data = removeComment.initRemov(data);
+
+console.log(data);
+
+/*
 //Posicionando cada linha do código em uma posição do vetor
 lineArr = breackLine.quebraLinha(data, lineArr);
 
 //Eliminado o \r no final de cada linha
 lineArr = breackLine.eliminaChar(lineArr);
 
-lineArr = removeComment.initRemov(lineArr);
-
 console.log(lineArr);
+*/

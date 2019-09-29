@@ -1,12 +1,16 @@
-exports.initRemov = function(arr1, arr2) {
-  const contador = 0;
-
-  for (i = 0; i < arr2.length; i++) {
-    if (arr2[i] == "/" && arr2[i + 1] == "/") {
-      contador++;
-    }
-
-    if (contador == 1) {
+exports.initRemov = function(file1) {
+  for (i = 0; i < file1.length; i++) {
+    if (file1[i] === "/" && file1[i + 1] === "/") {
+      for (j = i; j < file1.length; j++) {
+        if (file1[j] != "\n") {
+          file1[j] = "";
+          console.log(file1[j]);
+        } else {
+          j = file1.length;
+        }
+      }
     }
   }
+
+  return file1;
 };

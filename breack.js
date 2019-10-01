@@ -18,6 +18,7 @@ exports.quebraLinha = function(arr1, arr2 = [""]) {
 exports.eliminaChar = arr => {
   for (i = 0; i < arr.length; i++) {
     arr[i] = arr[i].replace("\n", "");
+    arr[i] = arr[i].replace("\r", "");
   }
   return arr;
 };

@@ -13,11 +13,6 @@ try {
   console.log(err);
 }
 
-data = removeComment.initRemov(data);
-
-console.log(data);
-
-/*
 //Posicionando cada linha do código em uma posição do vetor
 lineArr = breackLine.quebraLinha(data, lineArr);
 
@@ -25,4 +20,3 @@ lineArr = breackLine.quebraLinha(data, lineArr);
 lineArr = breackLine.eliminaChar(lineArr);
 
 console.log(lineArr);
-*/

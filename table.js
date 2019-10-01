@@ -1,8 +1,13 @@
 var table = {
   palavraReservada: [],
-  
+  ConstanteNumerica: [],
+  ConstanteLiteral: [],
+  NomeDeVariavelFuncao: [],
+  ComandoDeAttr: [],
+  DelimitadorDeInicioEfim: []
 };
 
-exports.tabelaDeTockens = function()
+table.palavraReservada.push("Mateus");
+table.palavraReservada.push("Eduardo");
 
 console.log(table.palavraReservada);

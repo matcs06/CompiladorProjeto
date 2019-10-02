@@ -16,4 +16,6 @@ exports.reservedWords = [
   "while"
 ];
 
-console.log(this.reservedWords);
+exports.delimitadoreDeInicioEfim = ["[", "]", "(", ")", "{", "}", "<", ">"];
+
+console.log(this.delimitadoreDeInicioEfim);

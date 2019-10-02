@@ -6,8 +6,3 @@ var table = {
   ComandoDeAttr: [],
   DelimitadorDeInicioEfim: []
 };
-
-table.palavraReservada.push("Mateus");
-table.palavraReservada.push("Eduardo");
-
-console.log(table.palavraReservada);

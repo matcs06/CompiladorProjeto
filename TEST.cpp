@@ -1,7 +1,6 @@
-//codigo de teste
 #include <stdio.h>
-int main ( ) {
-  int idade = 10; //mateus
-  printf(idade);
+int main() { 
+  int idade=10; 
+  int soma = idade + 2;
+  printf(soma);
 }
-//teste novo

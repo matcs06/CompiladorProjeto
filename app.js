@@ -1,8 +1,8 @@
 let fs = require("fs"); //Biblioteca para leitura de arquivo
 let lineArr = [""]; //Array para Guardar linhas
-
+let tokenArr = [];
 //Sessão de import de módulos
-const breackLine = require("./breack.js"); //Importando o breack line
+const { quebraLinha, removingEmptySpace, eliminaChar } = require("./breack.js"); //Importando o breack line
 const removeComment = require("./removeComment.js");
 
 //Lendo o arquivo
@@ -14,9 +14,12 @@ try {
 }
 
 //Posicionando cada linha do código em uma posição do vetor
-lineArr = breackLine.quebraLinha(data, lineArr);
+lineArr = quebraLinha(data, lineArr);
 
 //Eliminado o \r no final de cada linha
-lineArr = breackLine.eliminaChar(lineArr);
+lineArr = eliminaChar(lineArr);
 
-console.log(lineArr);
+//Array pronto
+tokenArr = removingEmptySpace(lineArr, tokenArr);
+
+console.log(tokenArr);

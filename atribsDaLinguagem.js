@@ -16,6 +16,29 @@ exports.reservedWords = [
   "while"
 ];
 
-exports.delimitadoreDeInicioEfim = ["[", "]", "(", ")", "{", "}", "<", ">"];
+exports.delDeInicioEfim = ["[", "]", "(", ")", "{", "}", "<", ">"];
+
+exports.caractersEspeciais = [
+  "[",
+  "]",
+  "(",
+  ")",
+  "{",
+  "}",
+  "<",
+  ">",
+  ";",
+  ",",
+  " ",
+  "=",
+  "!",
+  "|",
+  "*",
+  "-",
+  "*",
+  "/",
+  "\n",
+  "\r"
+];
 
 console.log(this.delimitadoreDeInicioEfim);

@@ -1,6 +1,6 @@
 # CompiladorProjeto
 
-Projeto de Compiladores do 8º semestre aa
+Projeto de Compiladores do 8º semestre
 
 INSTRUÇÕES IMPORTANTES:
 

@@ -37,6 +37,7 @@ exports.caractersEspeciais = [
   "-",
   "*",
   "/",
+  "#",
   "\n",
   "\r"
 ];

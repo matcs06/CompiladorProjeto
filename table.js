@@ -6,3 +6,4 @@ var table = {
   ComandoDeAttr: [],
   DelimitadorDeInicioEfim: []
 };
+console.log(table);

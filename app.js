@@ -1,9 +1,15 @@
 let fs = require("fs"); //Biblioteca para leitura de arquivo
 let lineArr = [""]; //Array para Guardar linhas
 let tokenArr = [];
-//Sessão de import de módulos
-const { quebraLinha, removingEmptySpace, eliminaChar } = require("./breack.js"); //Importando o breack line
-const removeComment = require("./removeComment.js");
+
+//Sessão de import de módulos do stringHandler
+const {
+  separaTockens,
+  removingEmptySpace,
+  eliminaChar,
+  removeComments,
+  removeWhiteSpace
+} = require("./stringHandler");
 
 //Lendo o arquivo
 try {
@@ -13,11 +19,15 @@ try {
   console.log(err);
 }
 
-//Posicionando cada linha do código em uma posição do vetor
-lineArr = quebraLinha(data, lineArr);
+data = removeComments(data);
+
+//Posicionando cada tocken em uma posição do vetor
+lineArr = separaTockens(data, lineArr);
 
 //Eliminado o \r no final de cada linha
 lineArr = eliminaChar(lineArr);
+
+lineArr = removeWhiteSpace(lineArr);
 
 //Array pronto
 tokenArr = removingEmptySpace(lineArr, tokenArr);

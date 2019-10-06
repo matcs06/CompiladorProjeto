@@ -16,8 +16,8 @@ estes dois arquivos são referentes a tabela e ao preenchedor da tabela que aind
 
 5 - Rodar a aplicação
 Clonando o projeto: (no terminal com o git instalado) git clone https://github.com/matcs06/CompiladorProjeto.git Compilador
--------->(no terminal) cd Compilador
--------->(no terminal) node app.js
+5.1 - (no terminal) cd Compilador
+5.2 - (no terminal) node app.js
 
 Componentes:
 Mateus Costa Silva,

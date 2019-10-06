@@ -11,3 +11,9 @@ Link para download no site oficial: https://nodejs.org/en/download/
 
 3 - Os arquivos table.js e o fTable.js não estão sendo usados na execulção do app.js
 estes dois arquivos são referentes a tabela e ao preenchedor da tabela que ainda não estão finalizados.
+
+Componentes:
+Mateus Costa Silva,
+Maxwell Fernandes,
+Gustavo Henrique Silva,
+Samuel de Alcantara

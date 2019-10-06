@@ -33,3 +33,5 @@ lineArr = removeWhiteSpace(lineArr);
 tokenArr = removingEmptySpace(lineArr, tokenArr);
 
 console.log(tokenArr);
+
+exports.tokens = tokenArr;

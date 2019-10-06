@@ -1,9 +1,11 @@
-var table = {
+var tabela = {
   palavraReservada: [],
   ConstanteNumerica: [],
   ConstanteLiteral: [],
   NomeDeVariavelFuncao: [],
-  ComandoDeAttr: [],
-  DelimitadorDeInicioEfim: []
+  operadoresMath: [],
+  DelimitadorDeInicioEfim: [],
+  operadorComparativo: []
 };
-console.log(table);
+
+exports.table = tabela;

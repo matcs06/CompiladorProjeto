@@ -18,6 +18,10 @@ exports.reservedWords = [
 
 exports.delDeInicioEfim = ["[", "]", "(", ")", "{", "}", "<", ">"];
 
+exports.operadorComparativo = [">=", "<=", "!=", "="];
+
+exports.operadoresMath = ["+", "-", "/", "*"];
+//Para separar tockens
 exports.caractersEspeciais = [
   "[",
   "]",
@@ -38,6 +42,7 @@ exports.caractersEspeciais = [
   "*",
   "/",
   "#",
+  '"',
   "\n",
   "\r"
 ];

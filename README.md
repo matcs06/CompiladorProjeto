@@ -15,8 +15,10 @@ estes dois arquivos são referentes a tabela e ao preenchedor da tabela que aind
 4 - O arquivo de teste está presente também (TESTE.cpp), ele é o arquivo que está sendo lido pela aplicação para separação de tockens
 
 5 - Rodar a aplicação
-Clonando o projeto: (no terminal com o git instalado) git clone https://github.com/matcs06/CompiladorProjeto.git Compilador
+Clonando o projeto: (no terminal com o git instalado) git clone https://github.com/matcs06/CompiladorProjeto.git Compilador.
+
 5.1 - (no terminal) cd Compilador
+
 5.2 - (no terminal) node app.js
 
 Componentes:

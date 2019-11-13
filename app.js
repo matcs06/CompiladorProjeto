@@ -1,14 +1,15 @@
 let fs = require("fs"); //Biblioteca para leitura de arquivo
 let lineArr = [""]; //Array para Guardar linhas
-let tokenArr = [];
+let tokenArr;
 
 //Sessão de import de módulos do stringHandler
 const {
-  separaTockens,
+  separaTokens,
   removingEmptySpace,
   eliminaChar,
   removeComments,
-  removeWhiteSpace
+  removeWhiteSpace,
+  separaLinhas
 } = require("./stringHandler");
 
 //Lendo o arquivo
@@ -21,17 +22,21 @@ try {
 
 data = removeComments(data);
 
+data = separaLinhas(data, lineArr)
+
 //Posicionando cada tocken em uma posição do vetor
-lineArr = separaTockens(data, lineArr);
+
+
+//lineArr = separaTockens(data, lineArr);
 
 //Eliminado o \r no final de cada linha
-lineArr = eliminaChar(lineArr);
+//lineArr = eliminaChar(lineArr);
 
-lineArr = removeWhiteSpace(lineArr);
+//lineArr = removeWhiteSpace(lineArr);
 
 //Array pronto
-tokenArr = removingEmptySpace(lineArr, tokenArr);
+//tokenArr = removingEmptySpace(lineArr, tokenArr);
 
-console.log(tokenArr);
+console.log(data);
 
 exports.tokens = tokenArr;
